@@ -49,21 +49,21 @@ which is ignored for the purpose of this exercise.
   
 # Data Processing
 
-The R script does the following:
-1. Download and extract the UCI HAR Dataset.
-2. Read the measure files and combine for training and test
-3. Read the Subject information and combine for training and test
-4. Read the Activity information and combine for training and test
+The R script does the following.  
+1. Download and extract the UCI HAR Dataset.  
+2. Read the measure files and combine for training and test  
+3. Read the Subject information and combine for training and test  
+4. Read the Activity information and combine for training and test  
 5. Read features/measures list and identify and filter the column indexes to 
 	keep in the processed data, by matching "mean(" or "std(". This additional 
 	"(" is used to ensure columns like "fBodyAccJerk-meanFreq()-X" are not 
-	selected. 
+	selected.  
 6. Read the activity names, and substitute these for IDs in activity 
-	information.
+	information.  
 7. Add proper column names to all data frames and remove "(" and ")" from 
-	column names.
+	column names.  
 8. Combine subject, activity, measure data frames to get a composite frame. 
-	This is equivalent to the result after requirement 4.
-9. Use the melt, dcast functions to generate the final tidy dataset.
-10. Write the output to disk
+	This is equivalent to the result after requirement 4.  
+9. Use the melt, dcast functions to generate the final tidy dataset.  
+10. Write the output to disk  
 
